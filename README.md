@@ -8,6 +8,7 @@
 代码：3D2D_G2O_BA-G2O优化库优化相机位姿，3D2D_EIGEN_BA-无优化库优化相机位姿<br>
 运行：<br>
 ```
+cd 3D2D_G2O_BA-G2O 或 3D2D_EIGEN_BA
 mkdir build
 cd build
 cmake ..
@@ -20,6 +21,7 @@ make
 代码：BAL_G2O_BA-G2O优化库优化多相机位姿和地图点<br>
 运行：<br>
 ```
+cd BAL_G2O_BA
 mkdir build
 cd build
 cmake ..
