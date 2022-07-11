@@ -167,6 +167,13 @@ void BALProblem::WriteToPLYFile(const std::string& filename)const{
     double center[3];
     for(int i = 0; i < num_cameras(); ++i){
       const double* camera = cameras() + camera_block_size() * i;
+
+        std::cout<< "camera id:" << i <<std::endl;
+        for (int j=0;j < 6;j++) {
+            std::cout<< *(camera + j) << " ";
+        }
+        std::cout<<std::endl;
+
       CameraToAngelAxisAndCenter(camera, angle_axis, center);
       of << center[0] << ' ' << center[1] << ' ' << center[2]
          << "0 255 0" << '\n';
